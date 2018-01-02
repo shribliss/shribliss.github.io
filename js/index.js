@@ -15,6 +15,11 @@ $( document ).ready(function() {
 // $('.carousel-indicators > li').first().addClass('active');
 // $('#carousel-example-generic').carousel();
 // $('#carouselExampleIndicators').carousel('pause');
+setTimeout(function(){
+  // alert("Hello");
+  $('.se-pre-con').addClass('hide');
+  $('.containerBox').removeClass('hide');
+}, 7000);
 $('#carouselExampleIndicators').carousel({
 pause: true,
 interval: false
