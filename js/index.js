@@ -1,5 +1,4 @@
-
-// $( document ).ready(function() {
+$( document ).ready(function() {
 // var images = [
 // "images/carousel/judo0.jpg",
 // "images/carousel/judo1.jpg",
@@ -15,15 +14,15 @@
 // $('.carousel-indicators > li').first().addClass('active');
 // $('#carousel-example-generic').carousel();
 // $('#carouselExampleIndicators').carousel('pause');
-// });
-$(window).on("load", function() {
-  // Things that need to happen after full load
-  $('.se-pre-con').addClass('hide');
-  $('.containerBox').removeClass('hide');
   $('#carouselExampleIndicators').carousel({
   pause: true,
   interval: false
   });
+});
+$(window).on("load", function() {
+  // Things that need to happen after full load
+  $('.se-pre-con').addClass('hide');
+  $('.containerBox').removeClass('hide');
   $('.contact').click(function() {
     $('html,body').animate({
       scrollTop: $("#contact").offset().top
