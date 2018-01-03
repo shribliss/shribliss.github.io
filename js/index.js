@@ -18,10 +18,8 @@
 // });
 $(window).on("load", function() {
   // Things that need to happen after full load
-  setTimeout(function(){
-    $('.se-pre-con').addClass('hide');
-    $('.containerBox').removeClass('hide');
-  }, 2000);
+  $('.se-pre-con').addClass('hide');
+  $('.containerBox').removeClass('hide');
   $('#carouselExampleIndicators').carousel({
   pause: true,
   interval: false
@@ -39,7 +37,3 @@ $(window).on("load", function() {
   // Back to Top
   backToTop();
 });
-
-// $(window).load(function() {
-
-// });
