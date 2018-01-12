@@ -1,9 +1,10 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  padding-top: 42px;
   /* padding-bottom: 3rem; */
   color: #5a5a5a;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,39 +12,69 @@ body {
   background-color: #F6F6F6 !important;
 }
 
-.myNavbar{
+.myNavbar {
   width: 100%;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  border-bottom: 2px solid rgba(255,255,255,.2);
-  /*height: 40px;*/
-  background: rgba(255,255,255,.5);
-  padding: 4px 0px 0px 5px!important;
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  /* height: 40px; */
+  background: rgba(255, 255, 255, .5);
+  padding: 0px 0px 0px 5px !important;
 }
 
-.myNavbar a{
+.myNavbar a {
   color: #000000 !important;
 }
 
-.myColorUl a:hover{
+.myColorLink{
+  color: #000000 !important;
+}
+
+.myColor:hover {
   color: #ffffff !important;
-  background-color: blue;
+  background-color: #1061e5;
   border: 1px solid blue;
 }
 
 .myColor {
   color: #000000 !important;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.myNavbar a img{
+.myNavbar a img {
   height: 30px;
   width: 30px;
 }
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
 .carousel-item {
-  height: 100vh;
+  height: 32rem;
+  background-color: #777;
+}
+
+.carousel-item {
+  /* height: 100vh; */
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -52,25 +83,7 @@ body {
   background-size: cover;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-  background-color: #777;
-}
-.carousel-item > img {
+.carousel-item>img {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,17 +91,28 @@ body {
   height: 32rem;
 }
 
+#myFrame {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
@@ -98,17 +122,17 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 30px 0; /* Space out the Bootstrap <hr> more */
+  margin: 30px 0;
+  /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
+
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
-
 
 /* social Navbar CSS
 -------------------------------------------------- */
@@ -166,7 +190,7 @@ body {
   bottom: 0;
 }
 
-#demo,#demo1,#demo2,.para{
+#demo, #demo1, #demo2, .para {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -202,32 +226,77 @@ body {
   color: #fff !important;
 }
 
-#back-top:hover{
+#back-top:hover {
   cursor: pointer;
 }
 
-a:hover{
+a:hover {
   color: red;
 }
 
-.collapse {
+.collapseView {
   margin-top: 10px !important;
 }
 
 /*###$$$-- Loader -$$$####*/
+
 /* .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; } */
+
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../images/Preloader_2.gif) center no-repeat #fff;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/Preloader_2.gif) center no-repeat #fff;
 }
 
 .hide {
   visibility: hidden;
   display: none;
+}
+
+/* ###################
+  botton Animations
+  ####################*/
+  .button_Animation {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* margin: 5px; */
+}
+
+.button_Animation span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_Animation span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_Animation:hover span {
+  padding-right: 20px;
+}
+
+.button_Animation:hover span:after {
+  opacity: 1;
+  right: 0;
 }
