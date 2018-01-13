@@ -1,18 +1,20 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+
 /* Extra Small Devices, Phones */
+
 @media only screen and (max-width: 320px) and (min-width: 0px) {
   body {
     font-size: 9px;
   }
-  .shri-Title, .shri-TitleFooter{
+  .shri-Title, .shri-TitleFooter {
     font-size: 9px;
   }
-  iframe{
+  iframe {
     height: 500px;
     width: 260px;
   }
-  .featurette-heading{
+  .featurette-heading {
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
@@ -20,11 +22,12 @@
 }
 
 /* Extra Small Devices, Phones */
+
 @media only screen and (min-width: 321px) and (max-width: 400px) {
   body {
     font-size: 9px;
   }
-  .shri-Title, .shri-TitleFooter{
+  .shri-Title, .shri-TitleFooter {
     font-size: 9px !important;
   }
 }
@@ -33,51 +36,53 @@
   body {
     font-size: 14px;
   }
-  .shri-Title, .shri-TitleFooter{
+  .shri-Title, .shri-TitleFooter {
     font-size: 10px !important;
   }
 }
 
 /* Small Devices, Tablets */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     font-size: 15px !important;
   }
-  .shri-Title, .shri-TitleFooter{
+  .shri-Title, .shri-TitleFooter {
     font-size: 20px;
   }
-  .contactContainerImage{
+  .contactContainerImage {
     height: 500px !important;
   }
 }
 
-
 /* Medium Devices, Desktops */
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
     font-size: 16px !important;
   }
-  .shri-Title, .shri-TitleFooter{
+  .shri-Title, .shri-TitleFooter {
     font-size: 16px;
   }
 }
 
 /* Large Devices, Wide Screens */
+
 @media only screen and (min-width: 1200px) {
   body {
     font-size: 16px !important;
   }
-  .shri-Title, .shri-TitleFooter{
+  .shri-Title, .shri-TitleFooter {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .carouselImage{
+  .carouselImage {
     height: 100% !important;
     width: 100%;
   }
-  .carousel-item{
+  .carousel-item {
     height: 180px;
     width: 100%;
   }
