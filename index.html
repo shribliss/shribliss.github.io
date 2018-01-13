@@ -64,15 +64,15 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active">
-            <iframe id="myFrame" src="https://www.youtube.com/embed/Gee8z3-x4Bc?rel=0&autoplay=1;showinfo=0" frameborder="0" allowfullscreen></iframe>
-          </div>
+          <!-- <div class="carousel-item active">
+            <iframe id="myFrame" src="https://www.youtube.com/embed/Gee8z3-x4Bc?rel=0&autoplay=1&mute=1;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div> -->
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item"><img class="carouselImage" src="images/carousel/skill-development.jpeg" alt="image2" width="100%" height="100%"></div>
+          <div class="carousel-item active"><img class="carouselImage" src="images/carousel/skill-development.jpeg" alt="image2" width="100%" height="100%"></div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item"><img class="carouselImage" src="images/carousel/skill-development3.jpg" alt="image3" width="100%" height="100%"></div>
         </div>
@@ -257,26 +257,26 @@
       <i class="fa fa-arrow-up" aria-hidden="true"></i> <a href="#top">Back to Top</a>
     </div>
   </div>
+  <script type="text/javascript">
+    function GetIEVersion() {
+      var sAgent = window.navigator.userAgent;
+      var Idx = sAgent.indexOf("MSIE");
+      // If IE, return version number.
+      if (Idx > 0)
+        return parseInt(sAgent.substring(Idx + 5, sAgent.indexOf(".", Idx)));
+
+      // Condition Check IF IE 11 and or MS Edge
+      else if (!!navigator.userAgent.match(/Trident\/7\./) ||
+        window.navigator.userAgent.indexOf("Edge") > -1) {
+        return 11;
+      } else {
+        return 0; //It is not IE
+      }
+    }
+    if (GetIEVersion() > 0) {
+      window.location.href = "browserError.html";
+    }
+  </script>
 </body>
 
 </html>
-<script type="text/javascript">
-  function GetIEVersion() {
-    var sAgent = window.navigator.userAgent;
-    var Idx = sAgent.indexOf("MSIE");
-    // If IE, return version number.
-    if (Idx > 0)
-      return parseInt(sAgent.substring(Idx + 5, sAgent.indexOf(".", Idx)));
-
-    // Condition Check IF IE 11 and or MS Edge
-    else if (!!navigator.userAgent.match(/Trident\/7\./) ||
-      window.navigator.userAgent.indexOf("Edge") > -1) {
-      return 11;
-    } else {
-      return 0; //It is not IE
-    }
-  }
-  if (GetIEVersion() > 0) {
-    window.location.href = "browserError.html";
-  }
-</script>
