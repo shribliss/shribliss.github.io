@@ -98,8 +98,10 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#containerload').removeClass('hide');
-    $('.se-pre-con').addClass('hide');
+    setTimeout(function() {
+      $('#containerload').removeClass('hide');
+      $('.se-pre-con').addClass('hide');
+    }, 1500);
     $('html,body').animate({
       scrollTop: $("#containerload").offset().top
     }, 1200);

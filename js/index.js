@@ -3,19 +3,20 @@ $(document).ready(function() {
     pause: true,
     interval: false
   });
-});
-$(window).on("load", function() {
   // Things that need to happen after full load
   $('.se-pre-con').addClass('hide');
   $('.containerBox').removeClass('hide');
   $('.contact').click(function() {
     $("#containerload").load("html/contact.html");
+    $('.se-pre-con').removeClass('hide');
   });
   $('.our_mission').click(function() {
     $("#containerload").load("html/our_mission.html");
+    $('.se-pre-con').removeClass('hide');
   });
   $('.activity').click(function() {
     $("#containerload").load("html/activity.html");
+    $('.se-pre-con').removeClass('hide');
   });
   // Back to Top
   backToTop();
