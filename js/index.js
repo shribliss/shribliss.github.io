@@ -18,6 +18,11 @@ $(window).on("load", function() {
       scrollTop: $("#our_mission").offset().top
     }, 1200);
   });
+  $('.activity').click(function() {
+    $('html,body').animate({
+      scrollTop: $("#activity").offset().top
+    }, 1200);
+  });
   // Back to Top
   backToTop();
 });
