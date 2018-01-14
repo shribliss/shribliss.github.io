@@ -10,27 +10,12 @@ $(window).on("load", function() {
   $('.containerBox').removeClass('hide');
   $('.contact').click(function() {
     $("#containerload").load("html/contact.html");
-    $('#containerload').removeClass('hide');
-    $('.se-pre-con').addClass('hide');
-    $('html,body').animate({
-      scrollTop: $("#containerload").offset().top
-    }, 1200);
   });
   $('.our_mission').click(function() {
     $("#containerload").load("html/our_mission.html");
-    $('#containerload').removeClass('hide');
-    $('.se-pre-con').addClass('hide');
-    $('html,body').animate({
-      scrollTop: $("#containerload").offset().top
-    }, 1200);
   });
   $('.activity').click(function() {
     $("#containerload").load("html/activity.html");
-    $('#containerload').removeClass('hide');
-    $('.se-pre-con').addClass('hide');
-    $('html,body').animate({
-      scrollTop: $("#containerload").offset().top
-    }, 1200);
   });
   // Back to Top
   backToTop();

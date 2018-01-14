@@ -25,7 +25,7 @@
       </div>
       <div class="col-md-4 col-sm-6 padleft-right">
         <figure class="imghvr-fold-up">
-          <img src="images/activity/activity_group-min.JPG" width="100%" height="100%"  class="img-responsive">
+          <img src="images/activity/activity_group-min.JPG" width="100%" height="100%" class="img-responsive">
           <figcaption>
             <h3>Our Team</h3>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p> -->
@@ -60,7 +60,7 @@
             <h3>Our Achievement</h3>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p> -->
           </figcaption>
-          <a href="#"></a>
+          <!-- <a href="#"></a> -->
         </figure>
       </div>
       <div class="col-md-4 col-sm-6 padleft-right">
@@ -77,3 +77,12 @@
   </div>
 </section>
 <!--/ Activity-->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#containerload').removeClass('hide');
+    $('.se-pre-con').addClass('hide');
+    $('html,body').animate({
+      scrollTop: $("#containerload").offset().top
+    }, 1200);
+  });
+</script>

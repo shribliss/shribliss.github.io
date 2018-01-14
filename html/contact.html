@@ -24,3 +24,13 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#containerload').removeClass('hide');
+    $('.se-pre-con').addClass('hide');
+    $('html,body').animate({
+      scrollTop: $("#containerload").offset().top
+    }, 1200);
+  });
+</script>
