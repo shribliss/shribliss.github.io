@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on('load', function() {
   $('#carouselExampleIndicators').carousel({
     pause: true,
     interval: false
