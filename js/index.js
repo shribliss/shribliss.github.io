@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('#carouselExampleIndicators').carousel({
     pause: true,
     interval: false
@@ -6,6 +7,7 @@ $(document).ready(function() {
   // Things that need to happen after full load
   $('.se-pre-con').addClass('hide');
   $('.containerBox').removeClass('hide');
+  $('#socialMediaModal').modal('show');
   $('.contact').click(function() {
     $("#containerload").load("html/contact.html");
     $('.se-pre-con').removeClass('hide');
@@ -20,6 +22,21 @@ $(document).ready(function() {
   });
   // Back to Top
   backToTop();
+  // popup in modal
+  $(function () {
+    $('.pop-button').popover({
+      trigger: 'click',
+      html:true
+    }).click(function () {
+      setTimeout(function () {
+          $('.pop-button').popover('hide');
+      }, 2000);// it will hide automatically after 2 millsecond
+    });
+  });
+
+  $('.popover-header').click(function() {
+    $('.pop-button').popover('hide');
+  });
 });
 
 document.addEventListener("DOMContentLoaded",
